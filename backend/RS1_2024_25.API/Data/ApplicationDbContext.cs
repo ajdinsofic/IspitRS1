@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using RS1_2024_25.API.Data.Models;
 using RS1_2024_25.API.Data.Models.SharedTables;
 using RS1_2024_25.API.Data.Models.TenantSpecificTables.Modul1_Auth;
 using RS1_2024_25.API.Data.Models.TenantSpecificTables.Modul2_Basic;
@@ -27,6 +28,7 @@ public class ApplicationDbContext(DbContextOptions options, IHttpContextAccessor
     public DbSet<Faculty> FacultiesAll { get; set; }
     public DbSet<Professor> ProfessorsAll { get; set; }
     public DbSet<Student> StudentsAll { get; set; }
+    public DbSet<StudijaGodina> studijaGodinas { get; set; }
 
     // IQueryable umjesto DbSet
     public IQueryable<MyAppUser> MyAppUsers => Set<MyAppUser>().Where(e => e.TenantId == CurrentTenantIdThrowIfFail);

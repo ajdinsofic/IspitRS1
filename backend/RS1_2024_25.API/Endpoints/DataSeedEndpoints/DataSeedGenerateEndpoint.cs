@@ -294,8 +294,8 @@ public class DataSeedGenerateEndpoint(ApplicationDbContext db)
         // Kreiranje akademskih godina
         var academicYears = new List<AcademicYear>
         {
-            new AcademicYear { StartDate = new DateOnly(2024, 9, 1), EndDate = new DateOnly(2025, 6, 30), Description = "Academic Year 2024/2025" },
-            new AcademicYear { StartDate = new DateOnly(2023, 9, 1), EndDate = new DateOnly(2024, 6, 30), Description = "Academic Year 2023/2024" }
+            new AcademicYear { StartDate = new DateTime(2024, 9, 1), EndDate = new DateTime(2025, 6, 30), Description = "Academic Year 2024/2025" },
+            new AcademicYear { StartDate = new DateTime(2023, 9, 1), EndDate = new DateTime(2024, 6, 30), Description = "Academic Year 2023/2024" }
         };
 
         // Kreiranje korisnika s ulogama

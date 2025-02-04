@@ -40,6 +40,11 @@ import {SenderComponent} from './rxjs-subject-message-example/sender/sender.comp
 import {Receiver2Component} from './rxjs-subject-message-example/receiver2/receiver2.component';
 import { Receiver1Component } from './rxjs-subject-message-example/receiver1/receiver1.component';
 import { Receiver3Component } from './rxjs-subject-message-example/receiver3/receiver3.component';
+import { StudentsComponent } from './students/students.component';
+import { StudentNewComponent } from './students/student-new/student-new.component';
+import { StudentMaticnaComponent } from './students/student-maticna/student-maticna.component';
+import { StudentWinterNewComponent } from './students/student-winter-new/student-winter-new.component';
+import {MatCheckbox} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -61,6 +66,10 @@ import { Receiver3Component } from './rxjs-subject-message-example/receiver3/rec
     SenderComponent,
     Receiver1Component,
     Receiver3Component,
+    StudentsComponent,
+    StudentNewComponent,
+    StudentMaticnaComponent,
+    StudentWinterNewComponent,
   ],
   imports: [
     CommonModule,
@@ -85,6 +94,7 @@ import { Receiver3Component } from './rxjs-subject-message-example/receiver3/rec
     MatOption,
     MatCard,
     MatProgressSpinner,
+    MatCheckbox,
     // Omogućava pristup svemu što je eksportovano iz SharedModule
   ],
   providers: []

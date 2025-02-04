@@ -40,4 +40,5 @@ public class Student : TenantSpecificTable
     public string StudentNumber { get; set; } = string.Empty;
     public string? ContactMobilePhone { get; set; }
     public string? ContactPrivateEmail { get; set; }
+    public bool Obrisan { get; set; } = false;
 }

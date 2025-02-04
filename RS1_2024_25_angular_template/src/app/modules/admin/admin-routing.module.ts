@@ -15,6 +15,10 @@ import {MyChatComponent} from '../shared/mychat/mychat.component';
 import {
   RxjsSubjectMessageExampleComponent
 } from './rxjs-subject-message-example/rxjs-subject-message-example.component';
+import {StudentsComponent} from './students/students.component';
+import {StudentNewComponent} from './students/student-new/student-new.component';
+import {StudentMaticnaComponent} from './students/student-maticna/student-maticna.component';
+import {StudentWinterNewComponent} from './students/student-winter-new/student-winter-new.component';
 
 //komentar
 const routes: Routes = [
@@ -36,6 +40,10 @@ const routes: Routes = [
       {path: 'destination', component: DestinationComponent},
       {path: 'order', component: ReservationComponent},
       {path: 'chat', component: MyChatComponent},
+      {path: 'students', component: StudentsComponent},
+      {path: 'students/studentMaticna/:id', component: StudentMaticnaComponent},
+      {path: 'students/addWinterSemester/:id', component: StudentWinterNewComponent},
+      {path: 'students/studentNew', component: StudentNewComponent},
       {path: 'rxjs-subject-message-example', component: RxjsSubjectMessageExampleComponent},
       {path: '**', component: AdminErrorPageComponent} // Default ruta
     ]
